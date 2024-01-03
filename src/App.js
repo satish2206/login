@@ -27,8 +27,9 @@ export default function App() {
       ) : (
         <form onSubmit={handlesubmit}>
           {error && <p className="error">{error}</p>}
+          <div>
           <label>
-            UserName:
+            Username:
             <input
               id="username"
               placeholder="username"
@@ -37,7 +38,8 @@ export default function App() {
               required
             />
           </label>
-          <br />
+          </div>
+          <div>
           <label>
             Password:
             <input
@@ -48,8 +50,10 @@ export default function App() {
               required
             />
           </label>
-          <br />
+          </div>
+          <div>
           <button type="submit">Submit</button>
+          </div>
         </form>
       )}
     </div>
